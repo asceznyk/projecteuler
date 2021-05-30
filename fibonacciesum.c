@@ -19,7 +19,7 @@ int fibonacci_sum (int bound) {
 } 
 
 int main () {
-	int sum = fibonacci_sum(4000000); //answer should be 13
+	int sum = fibonacci_sum(4000000); 
 	printf("%d", sum);
 	return 0;
 } 
