@@ -8,6 +8,18 @@ int factorial (int n) {
 }
 
 int check_prime (int n) {
-	int f = floor((factorial(n) % (n+1)) / n) * (n - 1) + 2;
-	return f;
+	int a = 1;
+	while(a <= n) {
+		if(a != n && a != 1)
+			if(n % a == 0)
+				return 0;
+
+		a = a + 1;
+	}
+
+	return 1;
+}
+
+double dmod(double x, double y) {
+	return x - (int)(x/y) * y;
 }
