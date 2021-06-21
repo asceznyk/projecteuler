@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <math.h>
 
 int factorial (int n) {
@@ -20,6 +21,26 @@ int check_prime (int n) {
 	return 1;
 }
 
-double dmod(double x, double y) {
+int reverse_int(int x) {
+	int r = 0;
+
+	while(x != 0) {
+		r = r * 10;
+		r = r + (x % 10);
+		x = x / 10;
+	}
+
+	return r;
+}
+
+int is_palindrome(int x) {
+	int r = reverse_int(x);
+	if(r == x) {
+		return 1;
+	}
+	return 0;
+}
+
+double dmod (double x, double y) {
 	return x - (int)(x/y) * y;
 }
