@@ -25,13 +25,8 @@ int largest_palindrome() {
 	return lp;
 }
 
-int main () {
-	int x = 90109;
-	int r = reverse_int(x);
-	int p = is_palindrome(x);
-	int lp = largest_palindrome();
-	printf("%d\n", p);
-	printf("%d\n", r);
+int main () {	
+	int lp = largest_palindrome();	
 	printf("%d\n", lp);
 
 	return 0;
