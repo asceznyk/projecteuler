@@ -33,14 +33,6 @@ int reverse_int(int x) {
 	return r;
 }
 
-int is_palindrome(int x) {
-	int r = reverse_int(x);
-	if(r == x) {
-		return 1;
-	}
-	return 0;
-}
-
 double dmod (double x, double y) {
 	return x - (int)(x/y) * y;
 }
